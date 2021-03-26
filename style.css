@@ -1,0 +1,91 @@
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: #3b3536;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.video {
+    width: 100%;
+}
+
+.buttons {
+    padding: 10px;
+}
+
+.buttons button {
+    background: none;
+    border: none;
+    outline: 0;
+    cursor: pointer;
+
+}
+
+.buttons button:before {
+    content: '\f144';
+    font-family: 'Font Awesome 5 Free';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    font-size: 28px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.c-video {
+    width: 100%;
+    
+    max-width: 770px;
+    max-height: 440px;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-video:hover .controls {
+    transform: translateY(0);
+}
+
+.controls   {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgba(0,0,0,0.7);
+    transform: translateY(100%) translateY(-5px);
+    transition: all .2s;
+}
+
+
+
+.buttons button.play:before {
+    content: '\f144';
+    font-family: 'Font Awesome 5 Free';    
+}
+
+.buttons button.pause:before {
+    content: '\f28b';
+    font-family: 'Font Awesome 5 Free';
+}
+
+/* Container da barra de progresso */
+.video-bar {
+    height: 5px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+
+/* Barra de progresso do video */
+.pink-juice {
+    height: 5px;
+    background-color:#f62b6d;
+}
